@@ -2,12 +2,35 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Smooch+Sans:wght@100..900&display=swap');
 
+.adaptive{
+    width: 1440px;
+    height: 100%;
+    margin: auto;
+}
+@media (max-width:1440px){
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .container{
-    width: 820px;
+    width: 1090px;
     margin: 0 auto;
 }
 body{
     font-family: 'Roboto', sans-serif;
+    background-color: #000000;
 }
 h1 h2 p button{
     line-height: 100%;
@@ -49,6 +72,7 @@ button{
     background: linear-gradient(#28212D, rgb(0,0,0,0.5), #000000), url("/img/header-background.png") no-repeat;
     background-size: cover;
     background-position: center;    
+    width: 100%;
 }
 
 .logo-container{
