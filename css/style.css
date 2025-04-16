@@ -1,7 +1,7 @@
 @import "/css/null.css";
 @import url("https://fonts.googleapis.com/css2?family=Smooch+Sans:wght@100..900&display=swap");
 .container {
-  width: 920px;
+  max-width: 820px;
   margin: 0 auto;
 }
 
@@ -17,17 +17,17 @@ h1 h2 p button {
 
 h1 {
   color: white;
-  font-size: 40px;
+  font-size: 2.86rem;
 }
 
 h2 {
   font-weight: 700;
-  font-size: 32px;
+  font-size: 2.29rem;
   color: #4AB2BB;
 }
 
 p {
-  font-size: 16px;
+  font-size: 1.14rem;
   color: white;
 }
 
@@ -36,19 +36,19 @@ button {
   padding: 10px 17px;
   color: white;
   font-weight: 700;
-  font-size: 20px;
+  font-size: 1.43rem;
 }
 
 .footer-logo {
   font-family: "Smooch Sans", sans-serif;
   font-weight: 700;
-  font-size: 32px;
+  font-size: 2.29rem;
   color: rgba(255, 255, 255, 0.37);
 }
 
 .year {
   font-weight: 700;
-  font-size: 12px;
+  font-size: 0.86rem;
   color: rgba(255, 255, 255, 0.37);
 }
 
@@ -72,7 +72,7 @@ button {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 780px;
+  max-width: 780px;
 }
 
 .main-information {
@@ -98,7 +98,8 @@ button {
   align-items: center;
   min-height: 400px;
 }
-.img-list .img-list_top {
+
+.img-list_top {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -123,4 +124,74 @@ button {
   flex-direction: column;
   justify-content: space-between;
   min-height: 80px;
+}
+
+@media (max-width: 820px) {
+  .container {
+    max-width: 520px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .img-list_top {
+    min-width: 437px;
+  }
+  .img-list_item {
+    width: 210px;
+    height: 118px;
+  }
+  .img-list {
+    min-height: 250px;
+  }
+  html {
+    font-size: 12px;
+  }
+  .haker-img {
+    max-width: 200px;
+  }
+  .main-container {
+    top: -35px;
+    min-height: 700px;
+    padding: 34px 40px 55px 40px;
+  }
+  h1 {
+    font-size: 2.3rem;
+  }
+}
+@media (max-width: 520px) {
+  .container {
+    max-width: 320px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .img-list_top {
+    min-width: 270px;
+  }
+  .img-list_item {
+    width: 130px;
+    height: 73px;
+  }
+  .img-list {
+    min-height: 155px;
+  }
+  html {
+    font-size: 10px;
+  }
+  .haker-img {
+    max-width: 130px;
+  }
+  .main-container {
+    top: -35px;
+    min-height: 480px;
+    padding: 22px 25px 35px 25px;
+  }
+  h1 {
+    font-size: 1.5rem;
+  }
+  h2 {
+    font-size: 1.7rem;
+  }
+  button {
+    padding: 7px 11px;
+    font-size: 1.2rem;
+  }
 }/*# sourceMappingURL=style.css.map */
